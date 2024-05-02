@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: #292929;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.nav {
+  width: 100%;
+  background: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  transition: all 0.5s ease;
+}
+
+/* --- Logo --- */
+.logo a {
+  /* margin-left: 40px; */
+  font-size: 25px;
+  color: #00c3ff;
+  font-weight: 100;
+  text-decoration: none;
+  color: #00c3ff;
+  transition: all 0.5s ease;
+  position: fixed;
+  left: 140px;
+  top: 50px;
+}
+
+.logo a:hover {
+  /* margin-left: 20px; */
+  transform: scale(1.05);
+  padding: 5px 10px;
+  background: #1b6cca;
+  color: #fff;
+  border-radius: 15px;
+}
+
+/* --- Imagen Logo ---  */
+.img-logo {
+  margin-left: 20px;
+  align-items: center;
+  width: 80px;
+  height: auto;
+  padding: 15px;
+  float: left;
+  left: 20px;
+  /* grid-column: 1 / 1; */
+  border-radius: 50%;
+}
+
+/* --- Menu --- */
+.menu {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+  margin: 10px;
+  transition: all 0.5s ease;
+}
+
+.menu li a {
+  color: #00c3ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s ease;
+  transform: scale(1.25);
+}
+
+/* --- Efecto Menu --- */
+.menu li a:hover {
+  padding: 5px 10px;
+  background: #1b6cca;
+  color: #fff;
+  border-radius: 15px;
+}
+
+/* Espacio Titulos */
+.grupo-bloques-interno-concepto, 
+.grupo-bloques-interno-sedes,
+.grupo-bloques-interno-escribanos {
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+/* Titulos */
+.titulo-concepto, 
+.titulo-sede,
+.titulo-escribanos {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 24px;
+  color: #f1f1f1;
+}
+
+hr {
+  box-sizing: content-box;
+  margin-bottom: 80px;
+  overflow: visible;
+  
+}
+
+.bloque-separador {
+  margin: 0px 750px 0px;
+  position: absolute;
+  /* display: block; */
+  width: 20%; 
+  /* padding-top: 3px; */
+  /* margin-bottom: 40px; */
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.container-columnas {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin: 20px;
+  background-color: rgb(1, 22, 22);
+}
+
+.container-columnas h2 p {
+  position: relative;
+  margin-left: 100%;
+  margin-right: 100px;
+  padding: 20px;
+}
+
+/* Gral columnas concepto */
+.bloque-columna-1,
+.bloque-columna-2,
+.bloque-columna-3 {
+  flex: 1;
+  margin: 10px 10px 30px; /* Margen entre las columnas */
+  padding: 40px;
+  font: 14px;
+  color: #f1f1f1;
+}
+
+/* Bordes Columnas */
+.bloque-columna-1,
+.bloque-columna-2,
+.bloque-columna-3 {
+  border-radius: 12px;
+  border: #00c3ff solid;
+  
+}
+
+/* Efectos Columna Concepto */
+.bloque-columna-1:hover {
+  /* padding: 5px 10px; */
+  background: #1b6cca;
+  color: #fff;
+  border-radius: 15px;
+
+  margin: 10px 10px 30px; /* Margen entre las columnas */
+  padding: 40px;
+  font: 24px;
+  color: #f1f1f1;
+}
+
+.bloque-columna-2:hover {
+  /* padding: 5px 10px; */
+  background: #1b6cca;
+  color: #fff;
+  border-radius: 15px;
+
+  margin: 10px 10px 30px; /* Margen entre las columnas */
+  padding: 40px;
+  font: 14px;
+  color: #f1f1f1;
+}
+
+.bloque-columna-3:hover {
+  /* padding: 5px 10px; */
+  background: #1b6cca;
+  color: #fff;
+  border-radius: 15px;
+
+  margin: 10px 10px 30px; /* Margen entre las columnas */
+  padding: 40px;
+  font: 14px;
+  color: #f1f1f1;
+}
+
+
+p {
+  font: 14px;
+  margin: 0px 0px 20px;
+}
+
+/* boque img concepto */
+.bloque-concepto-img {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(5, 143, 143);
+  margin: 20px;
+  margin-top: -12px;
+}
+
+/* imagen concepto */
+.img-concepto {
+  width: 650px;
+  margin-top: -50px;
+}
+
+/* Estilos Footer */
+.containerFooter {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 80px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  width: 25%;
+  padding: 0 15%;
+}
+
+.footer-links h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #00c3ff;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.footer-links ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #bbbbbb;
+  display: block;
+  margin-bottom: 15px;
+  animation: all 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+  padding: 5px;
+}
+
+/* .footer formalidadesMR {
+  width: auto;
+} */
+
+.formalidadesMR {
+  position: relative;
+  text-align-last: center;
+  padding-top: 100px;
+  padding-bottom: 5%;
+  font-size: smaller;
+ 
+}
+/* Stilos slider */
+
+.slider-box {
+  width: 100%;
+  margin: 50px auto 2px;
+  margin-top: -10px;
+  margin: 50px auto 2;
+  overflow: hidden;
+}
+
+.slider-box ul {
+  display: flex;
+  padding: 0;
+  width: 400%; /* cada imagen equivale al 100% */
+  animation: slide 20s infinite alternate ease-in-out; /* cada imagen va durar 5 seg */
+}
+
+.slider-box li {
+  width: 100%;
+  /* position: center; */
+  list-style: none;
+}
+
+.slider-box img {
+  width: 100%;
+  max-height: 720px;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.descripcion {
+  position: relative; /* Posiciona de forma absoluta */
+  top: 500; /* Alinea la descripción en la parte inferior del slider */
+  left: 0; /* Alinea la descripción en el extremo izquierdo del slider */
+  /* width: 100%; Ocupa todo el ancho del slider */
+  padding: 0 250px; /* Agrega un espacio alrededor del texto */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo semi-transparente para que el texto sea legible */
+  color: #ffffff; /* Color de texto blanco */
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: -150px;
+  font-size: xx-large;
+}
+
+.slider-box {
+  width: 100%;
+}
+
+/* 21/04/24 */
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+@media (max-width: 991px) {
+  /* nav {
+        width: auto;
+    } */
+
+  body {
+    padding: 30px;
+  }
+
+  .slider-box {
+    width: 100%;
+    /* margin: 50px auto 0; */
+  }
+
+  .descripcion {
+    top: 50%;
+    padding: 0;
+  }
+
+  .descripcion h2 {
+    font-size: 25px;
+  }
+
+  .texto p {
+    font-size: 15px;
+  }
+
+  .footer-row {
+    text-align: center;
+  }
+}
